@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanyukta Suman's Blog: A Journey of Growth</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Join Sanyukta Suman on a personal growth journey. This blog documents my learnings, coding projects, and discoveries as I navigate a new chapter in my life.">
+    <meta name="keywords" content="Sanyukta Suman, personal growth, blog, learning, coding, ML projects, self-improvement, life journey">
+
+    <!-- Google Fonts for a clean, modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for easy, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc; /* Light gray background */
+        }
+    </style>
+
+    <!-- Google Analytics Tracking Script Placeholder -->
+    <!--
+        To enable tracking:
+        1. Go to Google Analytics and create a new property for your website.
+        2. Copy the tracking script they provide.
+        3. Paste it here, replacing this entire comment block.
+        4. Your code will look something like this:
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'GA_MEASUREMENT_ID');
+        </script>
+    -->
+
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo and Site Title -->
+            <div class="flex items-center">
+                <div class="text-3xl font-extrabold text-blue-600 mr-2">SS</div>
+                <h1 class="text-2xl font-bold text-gray-900">Sanyukta Suman</h1>
+            </div>
+            <!-- Navigation Links (Placeholder) -->
+            <nav class="hidden md:flex space-x-6 text-gray-600">
+                <a href="#" class="hover:text-blue-600 transition-colors duration-300">About</a>
+                <a href="#" class="hover:text-blue-600 transition-colors duration-300">Archive</a>
+                <a href="#" class="hover:text-blue-600 transition-colors duration-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto px-4 py-8 max-w-4xl">
+
+        <!-- AI Blog Post Generator Section -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Generate Your Next Post with AI</h2>
+            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                <textarea id="prompt-input" rows="4" class="w-full md:w-3/4 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" placeholder="Describe your blog post idea... e.g., 'Write about the challenges of starting a new habit.'"></textarea>
+                <button id="generate-button" class="w-full md:w-1/4 p-3 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
+                    Generate Post
+                </button>
+            </div>
+            <!-- Loading and Output Area -->
+            <div id="loading-spinner" class="hidden mt-4 text-center">
+                <svg class="animate-spin h-8 w-8 text-blue-500 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <p class="mt-2 text-gray-500">Generating your blog post...</p>
+            </div>
+            <div id="generated-output" class="mt-4 p-4 bg-gray-100 rounded-lg hidden">
+                <h3 class="text-lg font-semibold mb-2">Generated Draft:</h3>
+                <div id="generated-text" class="prose max-w-none text-gray-700"></div>
+            </div>
+        </section>
+
+        <!-- Placeholder Blog Post Section -->
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <article>
+                <h2 class="text-3xl font-bold mb-4">My Growth Journey Begins Now</h2>
+                <div class="prose max-w-none text-gray-700">
+                    <p class="mb-4">
+                        I’m starting this blog to document my growth journey. I turned 30 this year, and honestly, I feel horrible about it. Thirty feels so old, and I’m disappointed in myself. The fact is, I’m still working at a mediocre job with an underpaid salary, and I’m completely unsatisfied with my tasks. It feels like every item on my to-do list is a big, hairy chore. It’s that feeling of, “Gosh, here’s another new problem I have to look at today,” and it just makes me feel apathetic. I should be excited about problems and doing my best, and sometimes I do, but it's rare. I recently realized that this attitude needs to go. With this mindset, I’ll never grow. Hence, this blog.
+                    </p>
+                    <p class="mb-4">
+                        I originally wanted to make YouTube videos to document my journey, but I'm choosing to write a blog instead. Writing is the fastest way to document my learnings. For example, every time I learn something new, I pick up my pen, grab my notebook, and jot it down. I love the simple act of collecting information. While video is an amazing way to convey findings, writing has its own unique fanbase—and I can relate to that. As an avid reader, I love to read, and I love to write stuff down.
+                    </p>
+                    <p class="mb-4">
+                        These blog posts will be published weekly and will contain all my learnings. I mean <i>everything</i>: a new person who inspires me, an ML project I'm working on, new code I've tried, my progress in learning a new skill, and even a new recipe. This blog will literally have everything.
+                    </p>
+                    <p class="mb-4">
+                        Lastly, I am doing this because I want to be a great storyteller, and this blog will be one of the best ways to practice that.
+                    </p>
+                    <p class="font-bold text-lg mt-6">See you on the next episode!</p>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-white border-t border-gray-200 mt-8 py-6">
+        <div class="container mx-auto text-center text-gray-500 text-sm">
+            &copy; 2025 Sanyukta Suman. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for the AI-powered blog post generator
+        const promptInput = document.getElementById('prompt-input');
+        const generateButton = document.getElementById('generate-button');
+        const loadingSpinner = document.getElementById('loading-spinner');
+        const generatedOutput = document.getElementById('generated-output');
+        const generatedText = document.getElementById('generated-text');
+
+        // This is the core function to call the Gemini API
+        async function generateBlogPost(prompt) {
+            let chatHistory = [];
+            chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+            const payload = {
+                contents: chatHistory,
+                generationConfig: {
+                    temperature: 0.7,
+                    topK: 40,
+                    topP: 0.95,
+                    maxOutputTokens: 1024,
+                }
+            };
+            const apiKey = "";
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+            const maxRetries = 5;
+            let currentRetry = 0;
+            while (currentRetry < maxRetries) {
+                try {
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (response.status === 429) {
+                        const delay = Math.pow(2, currentRetry) * 1000;
+                        console.warn(`Rate limit hit. Retrying in ${delay}ms...`);
+                        await new Promise(resolve => setTimeout(resolve, delay));
+                        currentRetry++;
+                        continue;
+                    }
+
+                    if (!response.ok) {
+                        throw new Error(`API call failed with status: ${response.status}`);
+                    }
+
+                    const result = await response.json();
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const text = result.candidates[0].content.parts[0].text;
+                        return text;
+                    } else {
+                        throw new Error('Unexpected API response structure.');
+                    }
+                } catch (error) {
+                    console.error('Fetch error:', error);
+                    if (currentRetry === maxRetries - 1) {
+                        throw error;
+                    }
+                    currentRetry++;
+                }
+            }
+            throw new Error('API call failed after multiple retries.');
+        }
+
+        // Event listener for the generate button
+        generateButton.addEventListener('click', async () => {
+            const prompt = promptInput.value.trim();
+            if (!prompt) {
+                // A better way to show a message than a simple alert
+                const errorMessage = document.createElement('div');
+                errorMessage.className = "mt-4 p-3 bg-red-100 text-red-700 border border-red-400 rounded-lg";
+                errorMessage.textContent = 'Please enter a prompt to generate a blog post.';
+                loadingSpinner.insertAdjacentElement('afterend', errorMessage);
+                setTimeout(() => errorMessage.remove(), 3000);
+                return;
+            }
+
+            generateButton.disabled = true;
+            loadingSpinner.classList.remove('hidden');
+            generatedOutput.classList.add('hidden');
+            generatedText.innerHTML = '';
+
+            try {
+                const generatedContent = await generateBlogPost(`Please write a blog post based on this idea: "${prompt}". Structure it with an engaging title, a brief introduction, a few paragraphs of body content, and a concluding thought. The tone should be personal and reflective, similar to a growth journey blog.`);
+                
+                const formattedContent = generatedContent.split('\n').map(paragraph => `<p>${paragraph.trim()}</p>`).join('');
+
+                generatedText.innerHTML = formattedContent;
+                generatedOutput.classList.remove('hidden');
+            } catch (error) {
+                console.error('Failed to generate content:', error);
+                generatedText.innerHTML = `<p class="text-red-500">Sorry, there was an error generating your post. Please try again.</p>`;
+                generatedOutput.classList.remove('hidden');
+            } finally {
+                generateButton.disabled = false;
+                loadingSpinner.classList.add('hidden');
+            }
+        });
+    </script>
+
+</body>
+</html>
