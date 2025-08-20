@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Episode 1: My Kickoff Week in Data Science</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Join Sanyukta Suman on a personal growth journey. This blog documents my learnings, coding projects, and discoveries as I navigate a new chapter in my life.">
+  <meta name="keywords" content="Sanyukta Suman, personal growth, blog, learning, coding, ML projects, self-improvement, life journey">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Outfit:wght@700&family=Shrikhand&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Typography Plugin (CDN Build) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.5.10/dist/typography.min.css">
+
+  <!-- Optional: Extend Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['Noto Sans', 'sans-serif'],
+            brand: ['Shrikhand', 'cursive'],
+          },
+          colors: {
+            'brand-green': '#1d794c',
+            'brand-off-white': '#f9f1e8',
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-body">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo and Site Title -->
+            <a href="/index.html" class="flex items-center space-x-3">
+                <img src="/image/logo/sslogo.png" alt="Sanyukta Suman Logo" class="h-8 w-8 rounded-lg">
+                <span class="text-2xl text-brand-green font-brand">Sanyukta Suman</span>
+            </a>
+            <!-- Navigation -->
+            <div class="flex items-center">
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center">
+                    <a href="/index.html" title="Home" class="text-gray-600 hover:opacity-75 transition-opacity">
+                        <img src="/image/icons/home.svg" alt="Home" class="h-6 w-6">
+                    </a>
+                    <a href="/blogpost_landing_page.html" class="ml-4 text-gray-700 hover:text-brand-green font-semibold">Blog</a>
+                    <a href="/guide_landing_page.html" class="ml-4 text-gray-700 hover:text-brand-green font-semibold">Guide</a>
+                </nav>
+
+                <!-- Mobile: Burger Menu Button -->
+                <div class="md:hidden ml-4">
+                    <button id="menu-button" aria-label="Open Menu" class="focus:outline-none">
+                        <img src="/image/icons/menu.svg" alt="Menu" class="h-6 w-6">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Panel (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <nav class="flex flex-col p-4 space-y-2">
+                <a href="index.html#about" class="text-gray-700 hover:text-brand-green">About</a>
+                <a href="index.html#projects" class="text-gray-700 hover:text-brand-green">Projects</a>
+                <a href="/blogpost_landing_page.html" class="text-gray-700 hover:text-brand-green">Blog</a>
+                <a href="/guide_landing_page.html" class="text-gray-700 hover:text-brand-green">Blog</a>
+                <a href="index.html#contact" class="text-gray-700 hover:text-brand-green">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Blog Post starts from here -->
+    <!-- Main Content Area -->
+    <main class="container mx-auto px-4 py-8 md:py-16 max-w-4xl">
+        
+    <!-- Blog Post Thumbnail Section -->
+    <section class="mb-2">
+        <div class="relative w-full aspect-video bg-brand-green bg-opacity-10 rounded-2xl overflow-hidden shadow-lg flex items-center justify-center">
+            <img src="/image/blog_header/episode_1_h.jpg" alt="Blog Post Header" class="object-cover w-full h-full">
+        </div>
+    </section>
+
+    <!-- New: Image Caption Section -->
+    <div class="mb-8 text-right text-sm text-gray-500">
+        Image credit: <a href="https://www.pinterest.com/pin/16818198602390090/" class="rounded-lg underline hover:text-brand-green">Pinterest</a>
+    </div>
+
+
+    <!-- Blog Post Content Section -->
+    <section class="bg-white p-6 rounded-lg shadow-md">
+            <h1 class="text-4xl font-heading font-bold text-gray-900 mb-2">Episode 2: My Kickoff Week in Data Science</h1>
+            <div class="flex items-center text-gray-500 text-sm mb-6">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                    <span>Published on August 20, 2025</span>
+            </div>
+            <!-- 🔽 INSERT BLOG CONTENT HERE -->
+            <div id="blog-content" class="prose lg:prose-xl max-w-none">
+    <article class="container mx-auto px-4 py-8">
+    <p class="text-4xl font-heading font-bold text-gray-900 mb-2">Weekly Overview:</p>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">Welcome to my weekly roundup! This past week marked the start of my unemployment adventure (yes, I'm framing it positively), and it's been a whirlwind of growth, challenges, and exciting pivots. From revamping my online presence to diving into certifications and interview prep, here's what kept me buzzing:</p>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify"><strong>Highlights:</strong></p>
+    <ol class="list-decimal pl-6 mb-4">
+        <li>Rebuilding my portfolio website with a newsletter and blog focus</li>
+        <li>Started my Google Cloud Machine Learning Engineering Certification</li>
+        <li>Practiced SQL interview questions from Strata Scratch</li>
+        <li>Began freelancing as a Data Scientist</li>
+        <li>Discovered inspiring people this week</li>
+    </ol>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">Let's dive into the details—I'll share the highs, the hurdles, and the lessons learned along the way.</p>
+
+    <h2 class="font-heading text-3xl md:text-4xl font-bold text-gray-800 mb-5 mt-8 text-left">Rebuilding My Portfolio Website</h2>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">I've been tinkering with my website since 2019, redesigning it more times than I can count. It's evolved from a simple portfolio to an art gallery, a Looker Studio demo hub, and even a short-lived online shop for my artwork. Now, I'm giving it a new lease on life as a dedicated portfolio site, complete with weekly blog posts chronicling my quest for that dream job in data science.</p>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">This is my first full week of unemployment, and honestly, I've packed it so full of thrilling projects that "free time" feels like a myth. But that's the beauty of this phase—it's all about reinvention. When I decided to reshape my site's identity, I started by exploring how to integrate my Notion notes into my existing Wix setup. Embedding via iframes seemed promising at first, but it quickly fell flat: the pages looked clunky, editing control was minimal, and the design options just didn't vibe with my vision.</p>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">That's when it hit me—building a website from scratch doesn't have to be a time-sink anymore, especially with AI tools in my corner. Why settle for compromises when I could take full control and craft something simple, intuitive, and totally me? This realization shifted my mindset from frustration to excitement, setting the stage for the next step: nailing down my brand identity.</p>
+
+    <h3 class="font-heading text-2xl md:text-3xl font-bold text-gray-800 mb-4 mt-6 text-left">Crafting a Cohesive Brand Identity</h3>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">To guide this process, I turned to Perplexity AI for inspiration—it helped me refine my vague ideas into a polished plan. I had a theme in mind but struggled to document it cohesively. Picture this: a 1970s retro pop art aesthetic, infused with soothing matcha greens and buttery yellows. It felt right for my creative, data-driven personality.</p>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">I leaned on my go-to tools to bring it to life:</p>
+    <ul class="list-disc pl-6 mb-4">
+        <li><a href="https://www.canva.com/en_gb/" class="text-brand-green underline hover:text-brand-green/80"><strong>Canva</strong></a>: Packed with brand identity templates, it's a lifesaver for kickstarting projects without starting from zero.</li>
+        <li><a href="https://coolors.co/" class="text-brand-green underline hover:text-brand-green/80"><strong>Coolors.com,</strong></a> <a href="https://www.color-hex.com/" class="text-brand-green underline hover:text-brand-green/80"><strong>color-hex.com</strong></a>: Perfect for generating and tweaking color palettes, often sparked by quick Google searches.</li>
+        <li><a href="https://www.dafont.com/de/" class="text-brand-green underline hover:text-brand-green/80"><strong>dafont.com,</strong></a> <a href="https://fonts.google.com//" class="text-brand-green underline hover:text-brand-green/80"><strong>googlefont.com</strong></a>: I adore the playful 'Bright' font from Dafont and the clean 'Outfit' from Google Fonts.</li>
+        <li><strong>Google searches</strong> for icons to add that final pop.</li>
+        
+    </ul>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">After about five hours of experimenting and iterating, I landed on a setup that feels just right. Here's a sneak peek (imagine a vibrant screenshot here—stay tuned for the full reveal on the site!).</p>
+    <img src="/image/assets/brand_identity_col.jpg" alt="Placeholder image of a vibrant website design concept, showcasing a 1970s retro pop art aesthetic with matcha greens and buttery yellows." class="rounded-lg shadow-md my-6">
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">With the branding sorted, I was pumped to build the portfolio itself. My vision? A homepage leading to a blog landing page and individual posts. And building my website using Gemini. Before I start with writing code on VS Code, I set up Gemini Code Assist to help me tweak the design and polish the overall vibe.</p>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">If you're curious, check out this quick video on <a href="https://www.youtube.com/watch?v=QiqxoBYr6wM" class="text-brand-green underline hover:text-brand-green/80">How to Use Gemini AI in VS Code</a>. It's been a game-changer, turning what could have been a daunting task into an easy to debug the whole process and taking control of the situation.</p>
+
+    <h2 class="font-heading text-3xl md:text-4xl font-bold text-gray-800 mb-5 mt-8 text-left">Kicking Off My Google Cloud Machine Learning Engineering Certification</h2>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">Building on last week's Python refresh, I powered through the full W3Schools curriculum this week. Sure, I dabbled in Python during my master's program, but my recent jobs haven't touched it, leaving me a bit rusty. Getting back in the groove felt like reuniting with an old friend.</p>
+    <blockquote class="border-l-4 border-brand-green pl-4 italic text-gray-600 mb-4">Pro tip: Don't get stuck in basics overload. Warm up with the essentials, then dive into real projects. Tutorials are like a coach's playbook, but you won't build muscle without getting your hands dirty. It's the same in sports: all the theory in the world means nothing without practice!</blockquote>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">This week also highlighted my career shift from data analyst to data scientist. I dedicated a full day to revamping my resume for DS roles, even though my background leans more toward analytics and engineering. As I kick off my first data science gigs (more on that in a future post!), I researched certifications to bridge the gap. The winner? Google Cloud's Professional Machine Learning Engineering certificate.</p>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">Why this one? I'm already comfortable with Google Cloud Platform (GCP), and my freelance project uses it too. It's a respected credential that demands real commitment—think rigorous prep and a $200 exam fee. To hold myself accountable, I booked my exam date right away. This isn't just a checkbox; it's a stepping stone to proving my skills in a competitive field. Stay tuned as I share progress and tips.</p>
+
+    <h3 class="font-heading text-2xl md:text-3xl font-bold text-gray-800 mb-4 mt-6 text-left">Sharpening My Skills: Practicing SQL Interview Questions on StrataScratch</h3>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">Let's be real: Landing that dream job means acing the interview gauntlet. For my last role, a case study introduced me to Looker Studio (instant love affair!), but top companies throw in intense technical rounds. I've dodged this challenge before, but no more—it's time to conquer the mountain. My plan? Tackle five problems daily on StrataScratch, a platform tailored for data-focused interviews.</p>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">With three years of SQL under my belt, I figured it'd be smooth sailing. Spoiler: It wasn't. I hit unfamiliar problem types that left me stumped at first, reminding me that "hard" often just means "unfamiliar." Once you crack the logic, it clicks—and that's the thrill.</p>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">I initially eyed the LeetCode 150 grind (tech folks, you know the drill), but then it dawned on me: As a data scientist, my world revolves around ML concepts and SQL logic, not heavy data structures and algorithms (that's more for software devs). Enter StrataScratch—a LeetCode-style site built specifically for data pros. It's been a revelation, helping me focus on what matters most for my goals. If you're prepping too, give it a try; it's sharpening my edge one question at a time.</p>
+
+    <h2 class="font-heading text-3xl md:text-4xl font-bold text-gray-800 mb-5 mt-8 text-left">Launching My Freelance Journey as a Data Scientist</h2>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">Tying right into my GCP certification push, I feel incredibly fortunate to have landed my first freelance gig as a data scientist this week. I'm collaborating with a data firm. They've entrusted me with building an end-to-end ML pipeline to uncover strategies for increasing revenue—exactly the kind of high-impact work I've been craving. It's a golden opportunity to apply my data expertise to real business problems, and it's already accelerating my transition into data science.</p>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">Of course, no exciting project comes without its hurdles, and this one threw a few curveballs my way. The first big task? Importing Shopify data into BigQuery. As someone who's more analyst than engineer, this was uncharted territory, but I rolled up my sleeves and experimented until I cracked it.</p>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">Here's how the adventure unfolded:</p>
+    <ol class="list-decimal pl-6 mb-4">
+        <li>I hunted for a direct connection, like BigQuery's seamless link to Google Ads, but no luck—Shopify doesn't play that nicely out of the box.</li>
+        <li>Next, I tried Compute Engine instance with Airbyte, but ran into stubborn access token errors. Even after validating them in Postman, the issues persisted—frustrating, but a great lesson in debugging.</li>
+        <li>Finally, I pivoted to Python scripting, a tool I've shied away from in the past. It turned out to be the winner, getting the job done efficiently.</li>
+    </ol>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">If you're tackling something similar, check out this handy <a href="https://example-link.com/" class="text-brand-green underline hover:text-brand-green/80">guide on connecting Shopify with BigQuery</a>.</p>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">Once the data was in BigQuery (cue the victory dance!), I moved on to preprocessing and modeling, normalizing columns to set up a solid foundation. To keep everything streamlined, I'm managing the workflow in GitHub with CI/CD pipelines—connecting VS Code directly to GCP for running SQL queries and pushing updates.</p>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">There was a learning curve here too, especially linking Dataform to GitHub. If you're a freelancer dealing with external repos, this <a href="https://example-link.com/" class="text-brand-green underline hover:text-brand-green/80">guide to connecting Dataform to GitHub</a> will be your lifesaver</p>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">Looking ahead, I'll be prepping the data as features for modeling in the coming days. Next week, the fun ramps up with creating customer personas to optimize Google Ads targeting. If you're on a similar path, stay tuned for more insights—this gig is proving that persistence pays off in spades!</p>
+
+    <h2 class="font-heading text-3xl md:text-4xl font-bold text-gray-800 mb-5 mt-8 text-left">People Who Inspired Me This Week</h2>
+    <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">No week of growth is complete without a dose of inspiration from trailblazers who've walked bold paths. These three leaders caught my attention through their stories of innovation, resilience, and impact—reminding me that big dreams are achievable with grit and vision. Here's who fueled my motivation:</p>
+    <ol class="list-decimal pl-6 mb-4">
+        <li><a href="https://www.youtube.com/watch?v=ZgmOAqrDzus&amp;pp=ygUzc3RhbmZvcmQgYnVzaW5lc3Mgc2Nob29sIHZpZXcgZnJvbSB0aGUgdG9wIGR1b2xpbmdv" class="text-brand-green underline hover:text-brand-green/80"><strong>Luis Von Ahn, Cofounder and CEO of Duolingo</strong></a> – His journey from creating CAPTCHA to revolutionizing language learning shows how tech can make education accessible and fun. It inspired me to think bigger about using data for positive change.</li>
+        <li><a href="https://www.youtube.com/watch?v=r1Bi10Xt0fc" class="text-brand-green underline hover:text-brand-green/80"><strong>Aravind Srinivas, Cofounder and CEO of Perplexity</strong></a> – As the mind behind an AI-powered search engine, his emphasis on curiosity-driven innovation hit home, especially as I lean on tools like Perplexity for my own projects.</li>
+        <li><a href="https://www.youtube.com/watch?v=UIJUgnykkOA" class="text-brand-green underline hover:text-brand-green/80"><strong>Leena Nair, Global CEO of Chanel</strong></a> – From HR roots to leading a luxury icon, her story of breaking barriers and leading with empathy motivated me to embrace my multifaceted background in my career pivot.</li>
+    </ol>
+</article>
+            </div>
+        </article>
+    </section>
+</main>
+
+    <!-- Footer Section -->
+    <footer class="bg-white border-t border-gray-200 mt-16">
+        <div class="container mx-auto px-4 py-8 text-center text-gray-500 text-sm">
+            <p>&copy; 2024 Sanyukta Suman. All Rights Reserved.</p>
+            <p class="mt-1">Created by Sanyukta Suman</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Mobile Menu Toggle
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
