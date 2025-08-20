@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanyukta Suman | Guide</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore Sanyukta Suman's blog posts, documenting a personal growth journey, coding projects, and life discoveries.">
+    <meta name="keywords" content="Sanyukta Suman, blog, personal growth, learning, coding, ML projects, self-improvement, life journey">
+
+    <!-- Optimized Google Fonts Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Outfit:wght@700&family=Shrikhand&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'heading': ['Outfit', 'sans-serif'],
+                        'body': ['Noto Sans', 'sans-serif'],
+                        'brand': ['Shrikhand', 'cursive']
+                    },
+                    colors: {
+                        'brand-green': '#1d794c',
+                        'brand-off-white': '#f9f1e8'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-body">
+
+    <!-- Header Section (Copied from index.html) -->
+    <header class="bg-white shadow-sm p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo and Site Title -->
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="image/logo/sslogo.png" alt="Sanyukta Suman Logo" class="h-8 w-8 rounded-lg">
+                <span class="text-2xl text-brand-green font-brand">Sanyukta Suman</span>
+            </a>
+            <!-- Navigation -->
+            <div class="flex items-center">
+                <!-- Desktop: Home Icon -->
+                <nav class="hidden md:flex items-center">
+                    <a href="index.html" title="Home" class="text-gray-600 hover:opacity-75 transition-opacity">
+                        <img src="image/icons/home.svg" alt="Home" class="h-6 w-6">
+                    </a>
+                    <!-- New blog link added here -->
+                    <a href="blogpost_landing_page.html" class="ml-4 text-gray-700 hover:text-brand-green font-semibold">Blog</a>
+                    <a href="guide_landing_page.html" class="ml-4 text-gray-700 hover:text-brand-green font-semibold">Guide</a>
+                </nav>
+
+                <!-- Mobile: Burger Menu Button -->
+                <div class="md:hidden ml-4">
+                    <button id="menu-button" aria-label="Open Menu" class="focus:outline-none">
+                        <img src="image/icons/menu.svg" alt="Menu" class="h-6 w-6">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Panel (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <nav class="flex flex-col p-4 space-y-2">
+                <a href="#about" class="text-gray-700 hover:text-brand-green">About</a>
+                <a href="#projects" class="text-gray-700 hover:text-brand-green">Projects</a>
+                <a href="blog_landing_page.html" class="text-gray-700 hover:text-brand-green">Blog</a>
+                <a href="guide_landing_page.html" class="text-gray-700 hover:text-brand-green">Guide</a>
+                <a href="#contact" class="text-gray-700 hover:text-brand-green">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area - Blog Post Landing Page -->
+    <main class="container mx-auto px-4 py-8 md:py-16">
+        <h1 class="font-heading text-4xl sm:text-5xl font-bold text-gray-900 text-center mb-12">
+            Guides
+        </h1>
+
+        <!-- Blog Post List -->
+        <div class="space-y-12">
+
+                    <!-- Blog Post 2 -->
+            <article class="flex flex-col md:flex-row gap-6 p-6 bg-white rounded-xl shadow-lg border border-gray-100">
+                <!-- Thumbnail Placeholder -->
+                <div class="w-full md:w-1/3 flex-shrink-0">
+                    <div class="h-48 md:h-full bg-brand-green bg-opacity-10 rounded-xl flex items-center justify-center">
+                        <p > <img src="image/assets_thumbnail/external_and_internal_github.jpg" alt="Blog Post Thumbnail" class="text-gray-400 font-bold"> </p>
+                    </div>
+                </div>
+
+                <!-- Post Content -->
+                <div class="flex flex-col justify-center">
+                    <h2 class="font-heading text-2xl font-bold text-gray-900 mb-2">
+                        Work on external Github account with your personal Github account
+                    </h2>
+                    <p class="text-gray-600 mb-4 line-clamp-3">
+                      To collaborate on an external GitHub repository using your own account, you'll need to follow a process that involves creating a repository, forking it, and then using a pull request to merge your changes.......
+                    </p>
+                    <a href="/guides/Work_on_external_Github_account_with_your_personal_Github_account.html" class="inline-block self-start rounded-md bg-brand-green px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-green">
+                        Read More
+                    </a>
+                </div>
+            </article>
+
+        <!-- Blog Post List -->
+        <div class="space-y-12">
+
+                    <!-- Blog Post 2 -->
+            <article class="flex flex-col md:flex-row gap-6 p-6 bg-white rounded-xl shadow-lg border border-gray-100">
+                <!-- Thumbnail Placeholder -->
+                <div class="w-full md:w-1/3 flex-shrink-0">
+                    <div class="h-48 md:h-full bg-brand-green bg-opacity-10 rounded-xl flex items-center justify-center">
+                        <p > <img src="image/assets_thumbnail/dataform_github.jpg" alt="Blog Post Thumbnail" class="text-gray-400 font-bold"> </p>
+                    </div>
+                </div>
+
+                <!-- Post Content -->
+                <div class="flex flex-col justify-center">
+                    <h2 class="font-heading text-2xl font-bold text-gray-900 mb-2">
+                        Beginner's Guide to Connecting Dataform to GitHub
+                    </h2>
+                    <p class="text-gray-600 mb-4 line-clamp-3">
+                      Connecting your Dataform repository to GitHub is a crucial step for data teams, enabling version control, collaboration, and automated deployments. This guide will walk you through the process, from creating a secure access token to syncing your first change......
+                    </p>
+                    <a href="/guides/A_Complete_Beginner's_Guide_to_Connecting_Dataform_to_GitHub.html" class="inline-block self-start rounded-md bg-brand-green px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-green">
+                        Read More
+                    </a>
+                </div>
+            </article>
+
+        <!-- Blog Post List -->
+        <div class="space-y-12">
+
+                    <!-- Blog Post 2 -->
+            <article class="flex flex-col md:flex-row gap-6 p-6 bg-white rounded-xl shadow-lg border border-gray-100">
+                <!-- Thumbnail Placeholder -->
+                <div class="w-full md:w-1/3 flex-shrink-0">
+                    <div class="h-48 md:h-full bg-brand-green bg-opacity-10 rounded-xl flex items-center justify-center">
+                        <p > <img src="image/assets_thumbnail/shopify_api_call.jpg" alt="Blog Post Thumbnail" class="text-gray-400 font-bold"> </p>
+                    </div>
+                </div>
+
+                <!-- Post Content -->
+                <div class="flex flex-col justify-center">
+                    <h2 class="font-heading text-2xl font-bold text-gray-900 mb-2">
+                        A Developer's Guide to a Shopify to BigQuery Data Sync
+                    </h2>
+                    <p class="text-gray-600 mb-4 line-clamp-3">
+                      This guide will walk you through the entire process, including how to connect your code to GitHub, how to find the necessary API keys, and how to troubleshoot common issues.....
+                    </p>
+                    <a href="/guides/A_Developer's_Guide_to_a_Shopify_to_BigQuery_Data_Sync.html" class="inline-block self-start rounded-md bg-brand-green px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-green">
+                        Read More
+                    </a>
+                </div>
+            </article>
+
+            <!-- Blog Post 1: Latest Post -->
+            <article class="flex flex-col md:flex-row gap-6 p-6 bg-white rounded-xl shadow-lg border border-gray-100">
+                <!-- Thumbnail Placeholder -->
+                <div class="w-full md:w-1/3 flex-shrink-0">
+                    <div class="h-48 md:h-full bg-brand-green bg-opacity-10 rounded-xl flex items-center justify-center">
+                        <p > <img src="/image/assets_thumbnail/domain_vercel.jpg" alt="Blog Post Thumbnail" class="rounded-lg text-gray-400 font-bold"> </p>
+                    </div>
+                </div>
+
+                <!-- Post Content -->
+                <div class="flex flex-col justify-center">
+                    <h2 class="font-heading text-2xl font-bold text-gray-900 mb-2">
+                        How to Deploy Your Website on Vercel with a Custom Domain from Namecheap
+                    </h2>
+                    <p class="text-gray-600 mb-4 line-clamp-3">
+                        So, you've built a website and are ready to share it with the world. Deploying it to a platform like Vercel and connecting it to a custom domain from a registrar like Namecheap is a fantastic way to go. .....
+                    </p>
+                    <a href="/guides/How_to_Deploy_Your_Website_on_Vercel_with_a_Custom_Domain_from_Namecheap.html" class="inline-block self-start rounded-md bg-brand-green px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-green">
+                        Read More
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Footer Section (Copied from index.html) -->
+    <footer class="bg-white border-t border-gray-200 mt-16">
+        <div class="container mx-auto px-4 py-8 text-center text-gray-500 text-sm">
+            <p>&copy; 2024 Sanyukta Suman. All Rights Reserved.</p>
+            <p class="mt-1">Created by Sanyukta Suman</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Mobile Menu Toggle (Copied from index.html)
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
