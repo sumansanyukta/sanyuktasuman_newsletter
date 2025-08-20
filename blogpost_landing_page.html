@@ -54,6 +54,7 @@
                     </a>
                     <!-- New blog link added here -->
                     <a href="blogpost_landing_page.html" class="ml-4 text-gray-700 hover:text-brand-green font-semibold">Blog</a>
+                    <a href="guide_landing_page.html" class="ml-4 text-gray-700 hover:text-brand-green font-semibold">Guide</a>
                 </nav>
 
                 <!-- Mobile: Burger Menu Button -->
@@ -70,6 +71,7 @@
                 <a href="#about" class="text-gray-700 hover:text-brand-green">About</a>
                 <a href="#projects" class="text-gray-700 hover:text-brand-green">Projects</a>
                 <a href="blog_landing_page.html" class="text-gray-700 hover:text-brand-green">Blog</a>
+                <a href="guide_landing_page.html" class="text-gray-700 hover:text-brand-green">Guide</a>
                 <a href="#contact" class="text-gray-700 hover:text-brand-green">Contact</a>
             </nav>
         </div>
@@ -84,7 +86,30 @@
         <!-- Blog Post List -->
         <div class="space-y-12">
 
-            <!-- Blog Post 1: Latest Post -->
+                    <!-- Blog Post Episode 1 -->
+            <article class="flex flex-col md:flex-row gap-6 p-6 bg-white rounded-xl shadow-lg border border-gray-100">
+                <!-- Thumbnail Placeholder -->
+                <div class="w-full md:w-1/3 flex-shrink-0">
+                    <div class="h-48 md:h-full bg-brand-green bg-opacity-10 rounded-xl flex items-center justify-center">
+                        <p > <img src="image/blog_thumbnail/episode_1_t.jpg" alt="Blog Post Thumbnail" class="text-gray-400 font-bold"> </p>
+                    </div>
+                </div>
+
+                <!-- Post Content -->
+                <div class="flex flex-col justify-center">
+                    <h2 class="font-heading text-2xl font-bold text-gray-900 mb-2">
+                        Episode 1: My Kickoff Week in Data Science
+                    </h2>
+                    <p class="text-gray-600 mb-4 line-clamp-3">
+                        I've been tinkering with my website since 2019, redesigning it more times than I can count. It's evolved from a simple portfolio to an art gallery, a Looker Studio demo hub, and even a short-lived online shop for my artwork. Now, I'm giving....
+                    </p>
+                    <a href="blog_posts/blogpost_episode1.html" class="inline-block self-start rounded-md bg-brand-green px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-green">
+                        Read More
+                    </a>
+                </div>
+            </article>
+
+            <!-- Blog Post 1: Latest Post Episode 0 -->
             <article class="flex flex-col md:flex-row gap-6 p-6 bg-white rounded-xl shadow-lg border border-gray-100">
                 <!-- Thumbnail Placeholder -->
                 <div class="w-full md:w-1/3 flex-shrink-0">
@@ -101,53 +126,7 @@
                     <p class="text-gray-600 mb-4 line-clamp-3">
                         I’m starting this blog to document my growth journey. I turned 30 this year, and honestly, I feel horrible about it. Thirty feels so old, and I’m disappointed in myself. The fact is, I’m still working at a mediocre job with an underpaid salary, and and I’m completely unsatisfied with .....
                     </p>
-                    <a href="blog_page_episode0.html" class="inline-block self-start rounded-md bg-brand-green px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-green">
-                        Read More
-                    </a>
-                </div>
-            </article>
-
-            <!-- Blog Post 2 -->
-            <article class="flex flex-col md:flex-row gap-6 p-6 bg-white rounded-xl shadow-lg border border-gray-100">
-                <!-- Thumbnail Placeholder -->
-                <div class="w-full md:w-1/3 flex-shrink-0">
-                    <div class="h-48 md:h-full bg-brand-green bg-opacity-10 rounded-xl flex items-center justify-center">
-                        <p > <img src="/" alt="Blog Post Thumbnail" class="text-gray-400 font-bold"> </p>
-                    </div>
-                </div>
-
-                <!-- Post Content -->
-                <div class="flex flex-col justify-center">
-                    <h2 class="font-heading text-2xl font-bold text-gray-900 mb-2">
-                        Second Blog Post Title
-                    </h2>
-                    <p class="text-gray-600 mb-4 line-clamp-3">
-                        This is a three-line excerpt for a past blog post. It gives the reader a quick summary of the content to help them decide if they want to read more. This placeholder text will be replaced with your actual blog post summary.
-                    </p>
-                    <a href="#" class="inline-block self-start rounded-md bg-brand-green px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-green">
-                        Read More
-                    </a>
-                </div>
-            </article>
-            
-            <!-- Blog Post 3 -->
-            <article class="flex flex-col md:flex-row gap-6 p-6 bg-white rounded-xl shadow-lg border border-gray-100">
-                <!-- Thumbnail Placeholder -->
-                <div class="w-full md:w-1/3 flex-shrink-0">
-                    <div class="h-48 md:h-full bg-brand-green bg-opacity-10 rounded-xl flex items-center justify-center">
-                        <p > <img src="/" alt="Blog Post Thumbnail" class="text-gray-400 font-bold"> </p>
-                    </div>
-                </div>
-
-                <!-- Post Content -->
-                <div class="flex flex-col justify-center">
-                    <h2 class="font-heading text-2xl font-bold text-gray-900 mb-2">
-                        Third Blog Post Title
-                    </h2>
-                    <p class="text-gray-600 mb-4 line-clamp-3">
-                        This is a three-line excerpt for another blog post. It gives the reader a quick summary of the content to help them decide if they want to read more. This placeholder text will be replaced with your actual blog post summary.
-                    </p>
-                    <a href="#" class="inline-block self-start rounded-md bg-brand-green px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-green">
+                    <a href="blog_posts/blog_page_episode0.html" class="inline-block self-start rounded-md bg-brand-green px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-green">
                         Read More
                     </a>
                 </div>
