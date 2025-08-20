@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Developer's Guide to a Shopify to BigQuery Data Sync</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Join Sanyukta Suman on a personal growth journey. This blog documents my learnings, coding projects, and discoveries as I navigate a new chapter in my life.">
+  <meta name="keywords" content="Sanyukta Suman, personal growth, blog, learning, coding, ML projects, self-improvement, life journey">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Outfit:wght@700&family=Shrikhand&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Typography Plugin (CDN Build) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.5.10/dist/typography.min.css">
+
+  <!-- PrismJS Dark Theme -->
+  <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+
+  <!-- Optional: Extend Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['Noto Sans', 'sans-serif'],
+            brand: ['Shrikhand', 'cursive'],
+          },
+          colors: {
+            'brand-green': '#1d794c',
+            'brand-off-white': '#f9f1e8',
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-body">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo and Site Title -->
+            <a href="/index.html" class="flex items-center space-x-3">
+                <img src="/image/logo/sslogo.png" alt="Sanyukta Suman Logo" class="h-8 w-8 rounded-lg">
+                <span class="text-2xl text-brand-green font-brand">Sanyukta Suman</span>
+            </a>
+            <!-- Navigation -->
+            <div class="flex items-center">
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center">
+                    <a href="/index.html" title="Home" class="text-gray-600 hover:opacity-75 transition-opacity">
+                        <img src="/image/icons/home.svg" alt="Home" class="h-6 w-6">
+                    </a>
+                    <a href="/blogpost_landing_page.html" class="ml-4 text-gray-700 hover:text-brand-green font-semibold">Blog</a>
+                    <a href="/guide_landing_page.html" class="ml-4 text-gray-700 hover:text-brand-green font-semibold">Guide</a>
+                </nav>
+
+                <!-- Mobile: Burger Menu Button -->
+                <div class="md:hidden ml-4">
+                    <button id="menu-button" aria-label="Open Menu" class="focus:outline-none">
+                        <img src="/image/icons/menu.svg" alt="Menu" class="h-6 w-6">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Panel (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <nav class="flex flex-col p-4 space-y-2">
+                <a href="index.html#about" class="text-gray-700 hover:text-brand-green">About</a>
+                <a href="index.html#projects" class="text-gray-700 hover:text-brand-green">Projects</a>
+                <a href="/blogpost_landing_page.html" class="text-gray-700 hover:text-brand-green">Blog</a>
+                <a href="/guide_landing_page.html" class="text-gray-700 hover:text-brand-green">Blog</a>
+                <a href="index.html#contact" class="text-gray-700 hover:text-brand-green">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Blog Post starts from here -->
+    <!-- Main Content Area -->
+    <main class="container mx-auto px-4 py-8 md:py-16 max-w-4xl">
+        
+    <!-- Blog Post Thumbnail Section -->
+    <section class="mb-2">
+        <div class="relative w-full aspect-video bg-brand-green bg-opacity-10 rounded-2xl overflow-hidden shadow-lg flex items-center justify-center">
+            <img src="/image/assets/shopify_api_call.jpg" alt="Blog Post Thumbnail" class="object-cover w-full h-full">
+        </div>
+    </section>
+
+    <!-- New: Image Caption Section -->
+    <div class="mb-8 text-right text-sm text-gray-500">
+        Image credit: <a href="/index.html" class="rounded-lg underline hover:text-brand-green">Source</a>
+    </div>
+
+    <!-- Blog Post Content Section -->
+    <section class="bg-white p-6 rounded-lg shadow-md">
+        <article>
+            <h1 class="text-4xl font-heading font-bold text-gray-900 mb-2">A Developer's Guide to a Shopify to BigQuery Data Sync</h1>
+            <div class="flex items-center text-gray-500 text-sm mb-6">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                    <span>Published on August 20, 2025</span>
+                </div>
+            
+            <!-- 🔽 INSERT BLOG CONTENT HERE -->
+            <div id="blog-content" class="prose lg:prose-xl max-w-none">
+              
+<p class="font-body text-justify text-gray-700 leading-relaxed mb-4">Pulling data from your <a href="https://www.shopify.com/" class="text-brand-green underline hover:text-brand-green/80">Shopify</a> store into a data warehouse like <a href="https://cloud.google.com/bigquery" class="text-brand-green underline hover:text-brand-green/80">BigQuery</a> is a powerful way to unlock deeper business insights. As a developer, the process involves more than just running a script—it's about setting up a robust, secure, and reproducible workflow.</p>
+<p class="font-body text-justify text-gray-700 leading-relaxed mb-4">This guide will walk you through the entire process, including how to connect your code to <a href="https://github.com" class="text-brand-green underline hover:text-brand-green/80">GitHub</a>, how to find the necessary API keys, and how to troubleshoot common issues.</p>
+
+<h2 class="font-heading font-bold text-gray-800 mt-8 mb-4">1. Setting Up Your Development Environment</h2>
+<p class="font-body text-justify text-gray-700 leading-relaxed mb-4">Your local setup is the foundation of this project. A popular choice is <strong>VS Code</strong> because of its robust features and seamless Git integration.</p>
+<ol class="list-decimal pl-6 mb-4 font-body text-gray-700 leading-relaxed">
+  <li>
+    <p class="text-justify mb-2"><strong>Clone the Repository</strong>: Start by forking the external repository on <a href="https://github.com" class="text-brand-green underline hover:text-brand-green/80">GitHub</a> to your own account. Then, clone your fork to your local machine using VS Code's built-in terminal.</p>
+    <pre><code class="language-bash bg-gray-900 text-gray-100 rounded-lg p-4 my-4 overflow-x-auto">git clone https://github.com/your-github-username/your-repo-name.git
+cd your-repo-name</code></pre>
+  </li>
+  <li>
+    <p class="text-justify mb-2"><strong>Install Dependencies</strong>: The script relies on a few Python libraries. Install them by running this command in your terminal:</p>
+    <pre><code class="language-bash bg-gray-900 text-gray-100 rounded-lg p-4 my-4 overflow-x-auto">pip install -r requirements.txt</code></pre>
+  </li>
+</ol>
+
+<hr class="my-8 border-gray-300" />
+
+<h2 class="font-heading font-bold text-gray-800 mt-8 mb-4">2. Defining Your API Credentials</h2>
+<p class="font-body text-justify text-gray-700 leading-relaxed mb-4">To connect to <a href="https://www.shopify.com/" class="text-brand-green underline hover:text-brand-green/80">Shopify</a> and <a href="https://cloud.google.com/bigquery" class="text-brand-green underline hover:text-brand-green/80">BigQuery</a>, your script needs access to your credentials. Storing them in a <code class="bg-gray-100 text-gray-800 p-1 rounded">.env</code> file is a critical security practice that keeps your secrets out of your code and prevents them from being accidentally committed to <a href="https://git-scm.com/" class="text-brand-green underline hover:text-brand-green/80">Git</a>.</p>
+<p class="font-body text-justify text-gray-700 leading-relaxed mb-4">Create a file named <code class="bg-gray-100 text-gray-800 p-1 rounded">.env</code> in the root directory of your project (at the same level as the <code class="bg-gray-100 text-gray-800 p-1 rounded">scripts</code> folder).</p>
+<p class="font-body text-gray-700 leading-relaxed mb-2"><strong>Project Structure:</strong></p>
+<pre><code class="language-text bg-gray-900 text-gray-100 rounded-lg p-4 my-4 overflow-x-auto">your_project_name/
+├── scripts/
+│   ├── shopify_bigquery.py
+│   └── test_connection.py
+├── .env  &lt;-- This is where the file goes
+└── requirements.txt</code></pre>
+<p class="font-body text-justify text-gray-700 leading-relaxed mb-4">Inside the <code class="bg-gray-100 text-gray-800 p-1 rounded">.env</code> file, define the following variables, replacing the placeholders with your actual information:</p>
+<pre><code class="language-bash bg-gray-900 text-gray-100 rounded-lg p-4 my-4 overflow-x-auto">SHOPIFY_SHOP_URL=your-shop-name
+SHOPIFY_ACCESS_TOKEN=your-access-token
+GOOGLE_CLOUD_PROJECT_ID=your-project-id
+GOOGLE_APPLICATION_CREDENTIALS=./path/to/your/service-account-key.json</code></pre>
+
+<hr class="my-8 border-gray-300" />
+
+<h2 class="font-heading font-bold text-gray-800 mt-8 mb-4">3. How to Get Your API Tokens</h2>
+
+<h3 class="font-heading font-bold text-gray-800 mt-8 mb-4">Shopify Access Token</h3>
+<p class="font-body text-justify text-gray-700 leading-relaxed mb-4">You get this token by creating a <strong>Custom App</strong> in your <a href="https://admin.shopify.com/" class="text-brand-green underline hover:text-brand-green/80">Shopify admin</a>. This process generates a unique, private token that you'll use for authentication.</p>
+<ol class="list-decimal pl-6 mb-4 font-body text-gray-700 leading-relaxed">
+  <li>Log in to your <a href="https://admin.shopify.com/" class="text-brand-green underline hover:text-brand-green/80">Shopify admin</a> and navigate to <strong>Settings &gt; Apps and sales channels</strong>.</li>
+  <li>Click <strong>"Develop apps"</strong> and then <strong>"Create an app"</strong>.</li>
+  <li>Give it a name and click <strong>"Create app"</strong>.</li>
+  <li>Go to the <strong>"Configuration"</strong> tab to set the <strong>Admin API access scopes</strong>. You must select the permissions your script needs to read data (e.g., <code class="bg-gray-100 text-gray-800 p-1 rounded">read_orders</code>, <code class="bg-gray-100 text-gray-800 p-1 rounded">read_products</code>, <code class="bg-gray-100 text-gray-800 p-1 rounded">read_customers</code>).</li>
+  <li>After saving the scopes, go to the <strong>"API credentials"</strong> tab and click <strong>"Install app"</strong>.</li>
+  <li>You will be presented with your <strong>Admin API access token</strong>. This token is shown <strong>only once</strong>, so copy it immediately and paste it into your <code class="bg-gray-100 text-gray-800 p-1 rounded">.env</code> file.</li>
+</ol>
+
+<h3 class="font-heading font-bold text-gray-800 mt-8 mb-4">BigQuery Access Token</h3>
+<p class="font-body text-justify text-gray-700 leading-relaxed mb-4">For server-to-server authentication with <a href="https://cloud.google.com/bigquery" class="text-brand-green underline hover:text-brand-green/80">BigQuery</a>, you don't use a traditional access token. Instead, you create a <strong>Service Account</strong> and download its private key file. Your script uses this file to authenticate securely.</p>
+<ol class="list-decimal pl-6 mb-4 font-body text-gray-700 leading-relaxed">
+  <li>Go to the <a href="https://console.cloud.google.com/" class="text-brand-green underline hover:text-brand-green/80">Google Cloud Console</a> and navigate to <strong>IAM &amp; Admin &gt; Service Accounts</strong>.</li>
+  <li>Click <strong>"Create Service Account"</strong>. Give it a name and a description.</li>
+  <li>Grant it the necessary permissions. For this project, the <code class="bg-gray-100 text-gray-800 p-1 rounded">BigQuery Admin</code> role is a safe choice to ensure it has all the necessary permissions.</li>
+  <li>After the service account is created, click on its email address to view the details.</li>
+  <li>Go to the <strong>"Keys"</strong> tab, click <strong>"Add Key" &gt; "Create new key"</strong>, and choose <strong>JSON</strong> as the key type.</li>
+  <li>Your browser will download a JSON file. This is your private key. Move it into your project folder and update the <code class="bg-gray-100 text-gray-800 p-1 rounded">GOOGLE_APPLICATION_CREDENTIALS</code> variable in your <code class="bg-gray-100 text-gray-800 p-1 rounded">.env</code> file with its path.</li>
+</ol>
+
+<hr class="my-8 border-gray-300" />
+
+<h2 class="font-heading font-bold text-gray-800 mt-8 mb-4">4. Generate the Python Scripts</h2>
+<p class="font-body text-justify text-gray-700 leading-relaxed mb-4">If you don't have the Python scripts already, you can use the following prompt to generate them with any large language model. Simply copy the text below and paste it into your favorite LLM's prompt box.</p>
+<pre><code class="language-text bg-gray-900 text-gray-100 rounded-lg p-4 my-6 overflow-x-auto">Generate two Python scripts in a single code block.
+
+The first script should be named `shopify_bigquery.py`. This script must:
+1.  Use the `dotenv` library to load environment variables.
+2.  Authenticate to the Shopify Admin API using the access token from the environment.
+3.  Authenticate to Google BigQuery using a service account JSON key file from the environment.
+4.  Fetch data for `orders`, `customers`, and `products` from the Shopify API, including handling pagination.
+5.  Load the fetched data into separate tables in a BigQuery dataset named `shopify_data`.
+6.  Use the `WRITE_TRUNCATE` disposition to overwrite the tables on each run.
+7.  Include a simple `main` function and an `if __name__ == "__main__"` block.
+8.  Add comments to explain the code.
+
+The second script should be named `test_connection.py`. This script must:
+1.  Also use the `dotenv` library.
+2.  Perform a simple `GET` request to the Shopify API's `shop.json` endpoint to test if the credentials are valid.
+3.  Print a success or failure message based on the response.</code></pre>
+
+<hr class="my-8 border-gray-300" />
+
+<p class="font-body text-justify text-gray-700 leading-relaxed mb-4">Place both scripts one after the other in a single code block, separated by a comment line.</p>
+
+<h2 class="font-heading font-bold text-gray-800 mt-8 mb-4">5. Troubleshooting and Final Steps</h2>
+<p class="font-body text-justify text-gray-700 leading-relaxed mb-4">The most common issue is a mismatch in variable names. If you see an error like <code class="bg-gray-100 text-gray-800 p-1 rounded">❌ Missing Shopify credentials in environment variables</code>, it means the script couldn't find a key in the <code class="bg-gray-100 text-gray-800 p-1 rounded">.env</code> file with the exact name it's looking for. For example, if the script expects <code class="bg-gray-100 text-gray-800 p-1 rounded">SHOPIFY_SHOP_URL</code> but your <code class="bg-gray-100 text-gray-800 p-1 rounded">.env</code> file says <code class="bg-gray-100 text-gray-800 p-1 rounded">SHOPIFY_SHOP_NAME</code>, it will fail.</p>
+<p class="font-body text-justify text-gray-700 leading-relaxed mb-4">With everything correctly set up, you can now run the main script.</p>
+<pre><code class="language-bash bg-gray-900 text-gray-100 rounded-lg p-4 my-6 overflow-x-auto">python scripts/shopify_bigquery.py</code></pre>
+<p class="font-body text-justify text-gray-700 leading-relaxed mb-4">After a successful run, your data will be in <a href="https://cloud.google.com/bigquery" class="text-brand-green underline hover:text-brand-green/80">BigQuery</a>. The next step is to explore it in the <a href="https://console.cloud.google.com/bigquery" class="text-brand-green underline hover:text-brand-green/80">BigQuery console</a> by running your first SQL queries.</p>
+
+            </div>
+        </article>
+    </section>
+</main>
+
+    <!-- Footer Section -->
+    <footer class="bg-white border-t border-gray-200 mt-16">
+        <div class="container mx-auto px-4 py-8 text-center text-gray-500 text-sm">
+            <p>&copy; 2024 Sanyukta Suman. All Rights Reserved.</p>
+            <p class="mt-1">Created by Sanyukta Suman</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Mobile Menu Toggle
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

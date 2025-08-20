@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work on external Github account with your personal Github account</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Join Sanyukta Suman on a personal growth journey. This blog documents my learnings, coding projects, and discoveries as I navigate a new chapter in my life.">
+  <meta name="keywords" content="Sanyukta Suman, personal growth, blog, learning, coding, ML projects, self-improvement, life journey">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Outfit:wght@700&family=Shrikhand&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Typography Plugin (CDN Build) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.5.10/dist/typography.min.css">
+
+  <!-- PrismJS Dark Theme -->
+  <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+
+  <!-- Optional: Extend Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['Noto Sans', 'sans-serif'],
+            brand: ['Shrikhand', 'cursive'],
+          },
+          colors: {
+            'brand-green': '#1d794c',
+            'brand-off-white': '#f9f1e8',
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-body">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo and Site Title -->
+            <a href="/index.html" class="flex items-center space-x-3">
+                <img src="/image/logo/sslogo.png" alt="Sanyukta Suman Logo" class="h-8 w-8 rounded-lg">
+                <span class="text-2xl text-brand-green font-brand">Sanyukta Suman</span>
+            </a>
+            <!-- Navigation -->
+            <div class="flex items-center">
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center">
+                    <a href="/index.html" title="Home" class="text-gray-600 hover:opacity-75 transition-opacity">
+                        <img src="/image/icons/home.svg" alt="Home" class="h-6 w-6">
+                    </a>
+                    <a href="/blogpost_landing_page.html" class="ml-4 text-gray-700 hover:text-brand-green font-semibold">Blog</a>
+                    <a href="/guide_landing_page.html" class="ml-4 text-gray-700 hover:text-brand-green font-semibold">Guide</a>
+                </nav>
+
+                <!-- Mobile: Burger Menu Button -->
+                <div class="md:hidden ml-4">
+                    <button id="menu-button" aria-label="Open Menu" class="focus:outline-none">
+                        <img src="/image/icons/menu.svg" alt="Menu" class="h-6 w-6">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Panel (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <nav class="flex flex-col p-4 space-y-2">
+                <a href="index.html#about" class="text-gray-700 hover:text-brand-green">About</a>
+                <a href="index.html#projects" class="text-gray-700 hover:text-brand-green">Projects</a>
+                <a href="/blogpost_landing_page.html" class="text-gray-700 hover:text-brand-green">Blog</a>
+                <a href="/guide_landing_page.html" class="text-gray-700 hover:text-brand-green">Blog</a>
+                <a href="index.html#contact" class="text-gray-700 hover:text-brand-green">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Blog Post starts from here -->
+    <!-- Main Content Area -->
+    <main class="container mx-auto px-4 py-8 md:py-16 max-w-4xl">
+        
+    <!-- Blog Post Thumbnail Section -->
+    <section class="mb-2">
+        <div class="relative w-full aspect-video bg-brand-green bg-opacity-10 rounded-2xl overflow-hidden shadow-lg flex items-center justify-center">
+            <img src="/image/assets/external_and_internal_github.jpg" alt="Blog Post Thumbnail" class="object-cover w-full h-full">
+        </div>
+    </section>
+
+    <!-- New: Image Caption Section -->
+    <div class="mb-8 text-right text-sm text-gray-500">
+        Image credit: <a href="/index.html" class="rounded-lg underline hover:text-brand-green">Source</a>
+    </div>
+
+    <!-- Blog Post Content Section -->
+    <section class="bg-white p-6 rounded-lg shadow-md">
+        <article>
+            <h1 class="text-4xl font-heading font-bold text-gray-900 mb-2">Work on external Github account with your personal Github account</h1>
+            <div class="flex items-center text-gray-500 text-sm mb-6">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                    <span>Published on August 13, 2024</span>
+                </div>
+            
+            <!-- 🔽 INSERT BLOG CONTENT HERE -->
+            <div id="blog-content" class="prose lg:prose-xl max-w-none">
+<article>
+  <p class="font-body text-gray-700 text-justify leading-relaxed mb-4">
+    To collaborate on an external <a href="https://github.com" class="text-brand-green underline hover:text-brand-green/80">GitHub</a> repository using your own account, you'll need to follow a process that involves creating a repository, forking it, and then using a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-with-pull-requests/about-pull-requests" class="text-brand-green underline hover:text-brand-green/80">pull request</a> to merge your changes. This is a common workflow for contributing to open-source projects or collaborating with others without direct write access to the main repository.
+  </p>
+
+  <h2 class="font-heading font-bold text-gray-800 mt-8 mb-4 text-left">Step 1: Create the Repository (External Account)</h2>
+  <p class="font-body text-gray-700 text-justify leading-relaxed mb-4">
+    First, you'll need to create the repository on the <strong>external GitHub account</strong>.
+  </p>
+  <ol class="list-decimal pl-6 mb-4">
+    <li>Log in to the external account and click the <strong>'+' icon</strong> in the top right corner, then select <strong>'New repository'</strong>.</li>
+    <li>Give the repository a <strong>name</strong> (e.g., 'Project_Repo').</li>
+    <li>Choose the <strong>visibility</strong> of the repository:
+      <ul class="list-disc pl-6 mb-4">
+        <li><strong>Public</strong>: Anyone can see this repository. You choose who can commit to it. This is ideal for open-source projects.</li>
+        <li><strong>Private</strong>: You choose who can see and commit to this repository. This is best for internal, private projects.</li>
+      </ul>
+    </li>
+    <li>Optionally, initialize the repository with a <strong>README file</strong>, which provides a description of the project.</li>
+    <li>Click <strong>'Create repository'</strong>.</li>
+  </ol>
+  <p class="font-body text-gray-700 text-justify leading-relaxed mb-4">
+    Now, you have a repository on the external account.
+  </p>
+
+  <h2 class="font-heading font-bold text-gray-800 mt-8 mb-4 text-left">Step 2: Grant Permissions (External Account)</h2>
+  <p class="font-body text-gray-700 text-justify leading-relaxed mb-4">
+    If the repository is private, you need to give your personal account access.
+  </p>
+  <ol class="list-decimal pl-6 mb-4">
+    <li>On the external account, navigate to the new repository.</li>
+    <li>Go to the <strong>'Settings'</strong> tab.</li>
+    <li>In the left-hand menu, select <strong>'Collaborators and teams'</strong>.</li>
+    <li>Click <strong>'Add collaborator'</strong> and search for your personal GitHub account username.</li>
+    <li>Select your personal account and click <strong>'Add [your_username] to this repository'</strong>. GitHub will send an invitation to your personal account.</li>
+  </ol>
+
+  <h2 class="font-heading font-bold text-gray-800 mt-8 mb-4 text-left">Step 3: Fork the Repository (Your Account)</h2>
+  <p class="font-body text-gray-700 text-justify leading-relaxed mb-4">
+    Now, you'll work from your personal <a href="https://github.com" class="text-brand-green underline hover:text-brand-green/80">GitHub</a> account to create a copy of the repository.
+  </p>
+  <ol class="list-decimal pl-6 mb-4">
+    <li>Log into <strong>your personal GitHub account</strong>.</li>
+    <li>Go to the external repository's page (the one you just created).</li>
+    <li>In the top-right corner, click the <strong>'<a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks" class="text-brand-green underline hover:text-brand-green/80">Fork</a>'</strong> button. This creates a copy of the repository under your personal GitHub account.</li>
+    <li>A new page will appear, confirming the creation of the fork. This is now your working copy, and you can make changes to it without affecting the original repository.</li>
+  </ol>
+
+  <h2 class="font-heading font-bold text-gray-800 mt-8 mb-4 text-left">Step 4: Clone and Work on Your Local Machine</h2>
+  <p class="font-body text-gray-700 text-justify leading-relaxed mb-4">
+    Next, you'll bring the code from your forked repository to your computer.
+  </p>
+  <ol class="list-decimal pl-6 mb-4">
+    <li>On <strong>your personal GitHub account</strong>, go to the <strong>forked repository</strong>.</li>
+    <li>Click the green <strong>'&lt;&gt; Code'</strong> button and copy the URL.</li>
+    <li>Open your <strong>terminal or command prompt</strong> on your computer.</li>
+    <li>
+      <p class="font-body text-gray-700 text-justify leading-relaxed mb-4">
+        Use the <code>git clone</code> command to download the repository:
+      </p>
+      <pre class="bg-gray-900 text-gray-100 rounded-lg p-4 my-6 overflow-x-auto"><code class="language-bash">git clone &lt;pasted_url&gt;</code></pre>
+    </li>
+    <li>
+      <p class="font-body text-gray-700 text-justify leading-relaxed mb-4">
+        Change into the new directory:
+      </p>
+      <pre class="bg-gray-900 text-gray-100 rounded-lg p-4 my-6 overflow-x-auto"><code class="language-bash">cd &lt;repository_name&gt;</code></pre>
+    </li>
+    <li>
+      <p class="font-body text-gray-700 text-justify leading-relaxed mb-4">
+        You can now make changes to the files using your preferred code editor.
+      </p>
+    </li>
+  </ol>
+
+  <h2 class="font-heading font-bold text-gray-800 mt-8 mb-4 text-left">Step 5: Commit and Push Changes</h2>
+  <p class="font-body text-gray-700 text-justify leading-relaxed mb-4">
+    After making changes, you need to save them and upload them to your forked repository.
+  </p>
+  <ol class="list-decimal pl-6 mb-4">
+    <li>
+      <p class="font-body text-gray-700 text-justify leading-relaxed mb-4">
+        In your terminal, add the changes you want to commit:
+      </p>
+      <pre class="bg-gray-900 text-gray-100 rounded-lg p-4 my-6 overflow-x-auto"><code class="language-bash">git add .</code></pre>
+    </li>
+    <li>
+      <p class="font-body text-gray-700 text-justify leading-relaxed mb-4">
+        Commit the changes with a descriptive message:
+      </p>
+      <pre class="bg-gray-900 text-gray-100 rounded-lg p-4 my-6 overflow-x-auto"><code class="language-bash">git commit -m "Your descriptive commit message"</code></pre>
+    </li>
+    <li>
+      <p class="font-body text-gray-700 text-justify leading-relaxed mb-4">
+        Push the changes to your <strong>forked repository</strong> on <a href="https://github.com" class="text-brand-green underline hover:text-brand-green/80">GitHub</a>:
+      </p>
+      <pre class="bg-gray-900 text-gray-100 rounded-lg p-4 my-6 overflow-x-auto"><code class="language-bash">git push origin main</code></pre>
+      <p class="font-body text-gray-700 text-justify leading-relaxed mb-4">
+        (Note: The default branch may be <code>main</code> or <code>master</code>. Check your repository for the correct branch name).
+      </p>
+    </li>
+  </ol>
+
+  <h2 class="font-heading font-bold text-gray-800 mt-8 mb-4 text-left">Step 6: Create a Pull Request</h2>
+  <p class="font-body text-gray-700 text-justify leading-relaxed mb-4">
+    This is the final step where you propose your changes to be merged into the original repository.
+  </p>
+  <ol class="list-decimal pl-6 mb-4">
+    <li>Go to <strong>your forked repository</strong> on <a href="https://github.com" class="text-brand-green underline hover:text-brand-green/80">GitHub</a>.</li>
+    <li>You should see a banner at the top that says something like "This branch is 1 commit ahead of [external_account]:[branch]". Click the <strong>'Contribute'</strong> button or <strong>'New <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-with-pull-requests/about-pull-requests" class="text-brand-green underline hover:text-brand-green/80">pull request</a>'</strong>.</li>
+    <li>Review your changes and provide a clear title and description for your pull request. This helps the maintainer of the original repository understand what you did.</li>
+    <li>Click <strong>'Create pull request'</strong>.</li>
+  </ol>
+  <p class="font-body text-gray-700 text-justify leading-relaxed mb-4">
+    The maintainer of the external repository will now be able to review your changes and, if they agree with them, merge your pull request into the original repository. You've successfully collaborated on an external repository!
+  </p>
+</article>
+            </div>
+        </article>
+    </section>
+</main>
+
+    <!-- Footer Section -->
+    <footer class="bg-white border-t border-gray-200 mt-16">
+        <div class="container mx-auto px-4 py-8 text-center text-gray-500 text-sm">
+            <p>&copy; 2024 Sanyukta Suman. All Rights Reserved.</p>
+            <p class="mt-1">Created by Sanyukta Suman</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Mobile Menu Toggle
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

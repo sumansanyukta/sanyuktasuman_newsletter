@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guide to Connecting Dataform to GitHub</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Join Sanyukta Suman on a personal growth journey. This blog documents my learnings, coding projects, and discoveries as I navigate a new chapter in my life.">
+  <meta name="keywords" content="Sanyukta Suman, personal growth, blog, learning, coding, ML projects, self-improvement, life journey">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Outfit:wght@700&family=Shrikhand&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Typography Plugin (CDN Build) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.5.10/dist/typography.min.css">
+
+  <!-- PrismJS Dark Theme -->
+  <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+
+  <!-- Optional: Extend Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['Noto Sans', 'sans-serif'],
+            brand: ['Shrikhand', 'cursive'],
+          },
+          colors: {
+            'brand-green': '#1d794c',
+            'brand-off-white': '#f9f1e8',
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-body">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo and Site Title -->
+            <a href="/index.html" class="flex items-center space-x-3">
+                <img src="/image/logo/sslogo.png" alt="Sanyukta Suman Logo" class="h-8 w-8 rounded-lg">
+                <span class="text-2xl text-brand-green font-brand">Sanyukta Suman</span>
+            </a>
+            <!-- Navigation -->
+            <div class="flex items-center">
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center">
+                    <a href="/index.html" title="Home" class="text-gray-600 hover:opacity-75 transition-opacity">
+                        <img src="/image/icons/home.svg" alt="Home" class="h-6 w-6">
+                    </a>
+                    <a href="/blogpost_landing_page.html" class="ml-4 text-gray-700 hover:text-brand-green font-semibold">Blog</a>
+                    <a href="/guide_landing_page.html" class="ml-4 text-gray-700 hover:text-brand-green font-semibold">Guide</a>
+                </nav>
+
+                <!-- Mobile: Burger Menu Button -->
+                <div class="md:hidden ml-4">
+                    <button id="menu-button" aria-label="Open Menu" class="focus:outline-none">
+                        <img src="/image/icons/menu.svg" alt="Menu" class="h-6 w-6">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Panel (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <nav class="flex flex-col p-4 space-y-2">
+                <a href="index.html#about" class="text-gray-700 hover:text-brand-green">About</a>
+                <a href="index.html#projects" class="text-gray-700 hover:text-brand-green">Projects</a>
+                <a href="/blogpost_landing_page.html" class="text-gray-700 hover:text-brand-green">Blog</a>
+                <a href="/guide_landing_page.html" class="text-gray-700 hover:text-brand-green">Blog</a>
+                <a href="index.html#contact" class="text-gray-700 hover:text-brand-green">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Blog Post starts from here -->
+    <!-- Main Content Area -->
+    <main class="container mx-auto px-4 py-8 md:py-16 max-w-4xl">
+        
+    <!-- Blog Post Thumbnail Section -->
+    <section class="mb-2">
+        <div class="relative w-full aspect-video bg-brand-green bg-opacity-10 rounded-2xl overflow-hidden shadow-lg flex items-center justify-center">
+            <img src="/image/assets/dataform_github.jpg" alt="Blog Post Thumbnail" class="object-cover w-full h-full">
+        </div>
+    </section>
+
+    <!-- New: Image Caption Section -->
+    <div class="mb-8 text-right text-sm text-gray-500">
+        Image credit: <a href="/index.html" class="rounded-lg underline hover:text-brand-green">Source</a>
+    </div>
+
+    <!-- Blog Post Content Section -->
+    <section class="bg-white p-6 rounded-lg shadow-md">
+        <article>
+            <h1 class="text-4xl font-heading font-bold text-gray-900 mb-2">Beginner's Guide to Connecting Dataform to GitHub</h1>
+            <div class="flex items-center text-gray-500 text-sm mb-6">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                    <span>Published on August 20, 2025</span>
+                </div>
+            
+            <!-- 🔽 INSERT BLOG CONTENT HERE -->
+            <div id="blog-content" class="prose lg:prose-xl max-w-none">
+<h1 class="text-gray-900 font-heading font-bold mt-8 mb-4 text-left">Connecting Dataform to GitHub: A Step-by-Step Guide</h1>
+
+<p class="text-justify font-body text-gray-700 leading-relaxed mb-4">Connecting your <a href="https://cloud.google.com/dataform" class="text-brand-green underline hover:text-brand-green/80">Dataform</a> repository to <a href="https://github.com/" class="text-brand-green underline hover:text-brand-green/80">GitHub</a> is a crucial step for data teams, enabling version control, collaboration, and automated deployments. This guide will walk you through the process, from creating a secure access token to syncing your first change.</p>
+
+<h2 class="text-gray-800 font-heading font-bold mt-8 mb-4 text-left">Step 1: Create a GitHub Personal Access Token (PAT)</h2>
+
+<p class="text-justify font-body text-gray-700 leading-relaxed mb-4">This token acts as a secure password for Dataform to access your GitHub repository. For this guide, we'll use a <strong>fine-grained personal access token</strong>, which is the most secure option.</p>
+
+<ol class="list-decimal pl-6 mb-4">
+    <li>Log in to your <a href="https://github.com/login" class="text-brand-green underline hover:text-brand-green/80">GitHub account</a> and navigate to <strong>Settings</strong>.</li>
+    <li>In the left sidebar, click <strong>Developer settings</strong>, then <strong>Personal access tokens</strong>, and finally <strong>Fine-grained tokens</strong>.</li>
+    <li>Click <strong>Generate new token</strong>.</li>
+    <li>Give the token a descriptive name, such as <code>Dataform-Access</code>.</li>
+    <li>Under <strong>Repository access</strong>, select <strong>Only select repositories</strong> and choose the specific repository you want to connect to Dataform. This ensures the token can only access that one repository.</li>
+    <li>Under <strong>Repository permissions</strong>, grant the following:
+        <ul class="list-disc pl-6 mb-4">
+            <li><strong>Contents</strong>: Set this to <strong>Read and write</strong>. This is the most important permission, allowing Dataform to read files from and write commits to your repository.</li>
+            <li><strong>Metadata</strong>: This is typically set to <strong>Read-only</strong> by default and is required for many Git operations.</li>
+        </ul>
+    </li>
+    <li>Click <strong>Generate token</strong>.</li>
+    <li><strong>Copy the token immediately</strong>. You will not be able to see it again. Store it in a secure location.</li>
+</ol>
+
+<h2 class="text-gray-800 font-heading font-bold mt-8 mb-4 text-left">Step 2: Store the PAT Securely in Google Cloud Secret Manager</h2>
+
+<p class="text-justify font-body text-gray-700 leading-relaxed mb-4">For security, you should not paste your PAT directly into Dataform. Instead, we'll use Google Cloud's <strong><a href="https://cloud.google.com/secret-manager" class="text-brand-green underline hover:text-brand-green/80">Secret Manager</a></strong>.</p>
+
+<ol class="list-decimal pl-6 mb-4">
+    <li>In the <a href="https://console.cloud.google.com/" class="text-brand-green underline hover:text-brand-green/80">Google Cloud console</a>, search for and navigate to <strong>Secret Manager</strong>. You may need to enable the API.</li>
+    <li>Click <strong>Create secret</strong>.</li>
+    <li>Name your secret (e.g., <code>github-dataform-pat</code>).</li>
+    <li>In the <strong>Secret value</strong> field, paste the token you copied in the previous step.</li>
+    <li>Click <strong>Create secret</strong>.</li>
+</ol>
+
+<h2 class="text-gray-800 font-heading font-bold mt-8 mb-4 text-left">Step 3: Grant Dataform Access to the Secret</h2>
+
+<p class="text-justify font-body text-gray-700 leading-relaxed mb-4">The Dataform service account needs permission to read the secret you just created.</p>
+
+<ol class="list-decimal pl-6 mb-4">
+    <li>Navigate to your newly created secret in Secret Manager and click on the <strong>Permissions</strong> tab.</li>
+    <li>Click <strong>Grant access</strong>.</li>
+    <li>For the <strong>New principal</strong>, enter the email address for your project's default Dataform service account. The format is <code>service-PROJECT_NUMBER@gcp-sa-dataform.iam.gserviceaccount.com</code>. You can find your <code>PROJECT_NUMBER</code> on your <a href="https://console.cloud.google.com/home/dashboard" class="text-brand-green underline hover:text-brand-green/80">Google Cloud project's dashboard</a>.</li>
+    <li>For the <strong>Role</strong>, select <strong>Secret Manager Secret Accessor</strong>.</li>
+    <li>Click <strong>Save</strong>.</li>
+</ol>
+
+<h2 class="text-gray-800 font-heading font-bold mt-8 mb-4 text-left">Step 4: Connect Dataform to Your GitHub Repository</h2>
+
+<p class="text-justify font-body text-gray-700 leading-relaxed mb-4">With the PAT securely stored and accessible, you can now link your Dataform repository to GitHub.</p>
+
+<ol class="list-decimal pl-6 mb-4">
+    <li>In the <a href="https://console.cloud.google.com/dataform" class="text-brand-green underline hover:text-brand-green/80">Google Cloud console</a>, navigate to your Dataform repository.</li>
+    <li>Click on <strong>Settings</strong> in the left-hand menu.</li>
+    <li>Under the <strong>Repository</strong> section, click <strong>Connect to a Git repository</strong>.</li>
+    <li>Fill out the pop-up form:
+        <ul class="list-disc pl-6 mb-4">
+            <li><strong>Git repository URL</strong>: Paste the full HTTPS URL of your GitHub repository (e.g., <code>https://github.com/your-username/your-repo.git</code>).</li>
+            <li><strong>Main branch</strong>: Enter the name of your main branch, which is typically <code>main</code>.</li>
+            <li><strong>Secret</strong>: A dropdown will appear. Select the secret you created in Step 2.</li>
+        </ul>
+    </li>
+    <li>Click <strong>Connect</strong>.</li>
+</ol>
+
+<p class="text-justify font-body text-gray-700 leading-relaxed mb-4">If the connection is successful, you'll see a confirmation message and a new Git status indicator at the top of your Dataform workspace. Congratulations! Your Dataform project is now connected to GitHub, and you can begin using Git directly from the Dataform UI.</p>
+            </div>
+        </article>
+    </section>
+</main>
+
+    <!-- Footer Section -->
+    <footer class="bg-white border-t border-gray-200 mt-16">
+        <div class="container mx-auto px-4 py-8 text-center text-gray-500 text-sm">
+            <p>&copy; 2024 Sanyukta Suman. All Rights Reserved.</p>
+            <p class="mt-1">Created by Sanyukta Suman</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Mobile Menu Toggle
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

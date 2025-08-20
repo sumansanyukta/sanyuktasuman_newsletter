@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Deploy Your Website on Vercel with a Custom Domain from Namecheap</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Join Sanyukta Suman on a personal growth journey. This blog documents my learnings, coding projects, and discoveries as I navigate a new chapter in my life.">
+  <meta name="keywords" content="Sanyukta Suman, personal growth, blog, learning, coding, ML projects, self-improvement, life journey">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Outfit:wght@700&family=Shrikhand&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Typography Plugin (CDN Build) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.5.10/dist/typography.min.css">
+
+  <!-- PrismJS Dark Theme -->
+  <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+
+  <!-- Optional: Extend Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['Noto Sans', 'sans-serif'],
+            brand: ['Shrikhand', 'cursive'],
+          },
+          colors: {
+            'brand-green': '#1d794c',
+            'brand-off-white': '#f9f1e8',
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-body">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo and Site Title -->
+            <a href="/index.html" class="flex items-center space-x-3">
+                <img src="/image/logo/sslogo.png" alt="Sanyukta Suman Logo" class="h-8 w-8 rounded-lg">
+                <span class="text-2xl text-brand-green font-brand">Sanyukta Suman</span>
+            </a>
+            <!-- Navigation -->
+            <div class="flex items-center">
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center">
+                    <a href="/index.html" title="Home" class="text-gray-600 hover:opacity-75 transition-opacity">
+                        <img src="/image/icons/home.svg" alt="Home" class="h-6 w-6">
+                    </a>
+                    <a href="/blogpost_landing_page.html" class="ml-4 text-gray-700 hover:text-brand-green font-semibold">Blog</a>
+                    <a href="/guide_landing_page.html" class="ml-4 text-gray-700 hover:text-brand-green font-semibold">Guide</a>
+                </nav>
+
+                <!-- Mobile: Burger Menu Button -->
+                <div class="md:hidden ml-4">
+                    <button id="menu-button" aria-label="Open Menu" class="focus:outline-none">
+                        <img src="/image/icons/menu.svg" alt="Menu" class="h-6 w-6">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Panel (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <nav class="flex flex-col p-4 space-y-2">
+                <a href="index.html#about" class="text-gray-700 hover:text-brand-green">About</a>
+                <a href="index.html#projects" class="text-gray-700 hover:text-brand-green">Projects</a>
+                <a href="/blogpost_landing_page.html" class="text-gray-700 hover:text-brand-green">Blog</a>
+                <a href="/guide_landing_page.html" class="text-gray-700 hover:text-brand-green">Blog</a>
+                <a href="index.html#contact" class="text-gray-700 hover:text-brand-green">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Blog Post starts from here -->
+    <!-- Main Content Area -->
+    <main class="container mx-auto px-4 py-8 md:py-16 max-w-4xl">
+        
+    <!-- Blog Post Thumbnail Section -->
+    <section class="mb-2">
+        <div class="relative w-full aspect-video bg-brand-green bg-opacity-10 rounded-2xl overflow-hidden shadow-lg flex items-center justify-center">
+            <img src="/image/assets/domain_vercel.jpg" alt="Blog Post Thumbnail" class="object-cover w-full h-full">
+        </div>
+    </section>
+
+    <!-- New: Image Caption Section -->
+    <div class="mb-8 text-right text-sm text-gray-500">
+        Image credit: <a href="https://www.sanyuktasuman.com/" class="rounded-lg underline hover:text-brand-green">Source</a>
+    </div>
+
+    <!-- Blog Post Content Section -->
+    <section class="bg-white p-6 rounded-lg shadow-md">
+        <article>
+            <h1 class="text-4xl font-heading font-bold text-gray-900 mb-2">How to Deploy Your Website on Vercel with a Custom Domain from Namecheap</h1>
+            <div class="flex items-center text-gray-500 text-sm mb-6">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                    <span>Published on August 13, 2024</span>
+                </div>
+            
+            <!-- 🔽 INSERT BLOG CONTENT HERE -->
+            <div id="blog-content" class="prose lg:prose-xl max-w-none">
+<article>
+  <h1 class="font-heading text-gray-900 font-bold mt-8 mb-4 text-left">How to Deploy Your Website on Vercel with a Custom Domain from Namecheap</h1>
+  <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">So, you've built a website and are ready to share it with the world. Deploying it to a platform like Vercel and connecting it to a custom domain from a registrar like Namecheap is a fantastic way to go. This guide will walk you through the entire process, from setting up your repository to linking your domain.</p>
+
+  <h2 class="font-heading text-gray-800 font-bold mt-8 mb-4 text-left">Prerequisite Checklist</h2>
+  <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">Before you begin, make sure you have the following ready:</p>
+  <ul class="list-disc pl-6 mb-4">
+    <li><strong>A Domain Name:</strong> You can easily purchase one from a registrar like <a href="https://www.namecheap.com/" class="text-brand-green underline hover:text-brand-green/80">Namecheap</a> or <a href="https://www.godaddy.com/" class="text-brand-green underline hover:text-brand-green/80">GoDaddy</a>. I'll be using a domain purchased from Namecheap for this guide. I only bought the domain, without any additional ad-ons.</li>
+    <li><strong>A GitHub Repository:</strong> Create a new, public repository on <a href="https://github.com/" class="text-brand-green underline hover:text-brand-green/80">GitHub</a>. This is where your website's code will live.</li>
+    <li><strong>Your Code:</strong> Create an <code class="font-mono">index.html</code> file within your new repository and add some basic HTML code to it. Here’s a simple starting point:</li>
+  </ul>
+  <pre><code class="language-html bg-gray-900 text-gray-100 rounded-lg p-4 my-6 overflow-x-auto">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;My Basic Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is a simple paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  <ul class="list-disc pl-6 mb-4">
+    <li><strong>Commit and Push:</strong> Save the file and commit it to your GitHub repository.</li>
+  </ul>
+
+  <h2 class="font-heading text-gray-800 font-bold mt-8 mb-4 text-left">Step 1: Deploying Your Site with Vercel</h2>
+  <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">Vercel is an amazing platform that makes deploying websites incredibly simple. Here's how to get your project live:</p>
+  <ol class="list-decimal pl-6 mb-4">
+    <li><strong>Sign Up for Vercel:</strong> If you don't have one, create a Vercel account. It's highly recommended to sign up using your <a href="https://github.com/" class="text-brand-green underline hover:text-brand-green/80">GitHub</a> account for seamless integration.</li>
+    <li><strong>Create a New Project:</strong> From your Vercel dashboard, click the <strong>New Project</strong> button.</li>
+    <li><strong>Connect to GitHub:</strong> Vercel will prompt you to import a Git repository. Select <strong>GitHub</strong> as your provider and authorize Vercel to access your repositories. You can choose to grant access to all repositories or select specific ones.</li>
+    <li><strong>Import Your Repository:</strong> From the list of repositories, select the one you want to deploy. Vercel will automatically detect the project's framework (e.g., Next.js, React, Astro) and configure the necessary build commands. You can override these settings if needed.</li>
+    <li><strong>Deploy:</strong> Click the <strong>Deploy</strong> button. Vercel will then build and deploy your project, providing you with a unique preview URL (e.g., <code class="font-mono">my-project.vercel.app</code>).</li>
+    <li><strong>Automatic Updates:</strong> Once deployed, Vercel will automatically create a new preview deployment for every push to a branch and a production deployment for pushes to your main branch. This continuous deployment workflow ensures your site is always up-to-date with your latest code.</li>
+  </ol>
+
+  <h2 class="font-heading text-gray-800 font-bold mt-8 mb-4 text-left">Step 2: Linking Your Namecheap Domain</h2>
+  <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">Now that your site is live on Vercel, it's time to connect your custom domain so that visitors can find it at an address like <code class="font-mono">yourdomain.com</code>.</p>
+  <ol class="list-decimal pl-6 mb-4">
+    <li><strong>Add Your Domain in Vercel:</strong>
+      <ul class="list-disc pl-6 mb-4">
+        <li>From your Vercel dashboard, navigate to the <strong>project</strong> you want to link the domain to.</li>
+        <li>Go to the <strong>Settings</strong> tab and click on <strong>Domains</strong> in the left sidebar.</li>
+        <li>Enter your domain name (e.g., <code class="font-mono">yourdomain.com</code>) and click <strong>Add</strong>.</li>
+        <li>Vercel will detect that the domain is not yet configured and provide you with the necessary DNS records. It will usually give you two options: an <strong>A record</strong> for your root domain and a <strong>CNAME record</strong> for the <code class="font-mono">www</code> subdomain. Vercel automatically recommends setting up a redirect from the <code class="font-mono">www</code> to the apex domain, or vice versa, to ensure a consistent experience for visitors.</li>
+      </ul>
+    </li>
+    <li><strong>Configure DNS Records on Namecheap:</strong>
+      <ul class="list-disc pl-6 mb-4">
+        <li>Log in to your <a href="https://www.namecheap.com/" class="text-brand-green underline hover:text-brand-green/80">Namecheap</a> account and go to your <strong>Domain List</strong>.</li>
+        <li>Find the domain you're adding and click on <strong>Manage</strong>.</li>
+        <li>Navigate to the <strong>Advanced DNS</strong> tab.</li>
+        <li>You will now create the records that Vercel provided.
+          <ul class="list-disc pl-6 mb-4">
+            <li>To add the <strong>A record</strong> for the root domain:
+              <ul class="list-disc pl-6 mb-4">
+                <li>Click <strong>Add New Record</strong>.</li>
+                <li>For <strong>Type</strong>, select <code class="font-mono">A Record</code>.</li>
+                <li>For <strong>Host</strong>, enter the <code class="font-mono">@</code> symbol.</li>
+                <li>For <strong>Value</strong>, copy the IP address provided by Vercel and paste it here.</li>
+                <li>Click the checkmark to save.</li>
+              </ul>
+            </li>
+            <li>To add the <strong>CNAME record</strong> for the <code class="font-mono">www</code> subdomain:
+              <ul class="list-disc pl-6 mb-4">
+                <li>Click <strong>Add New Record</strong>.</li>
+                <li>For <strong>Type</strong>, select <code class="font-mono">CNAME Record</code>.</li>
+                <li>For <strong>Host</strong>, enter <code class="font-mono">www</code>.</li>
+                <li>For <strong>Value</strong>, copy the <code class="font-mono">cname.vercel-dns.com</code> value provided by Vercel and paste it.</li>
+                <li>Click the checkmark to save.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ol>
+
+  <p class="font-body text-gray-700 leading-relaxed mb-4 text-justify">Your domain and website are now linked! Keep in mind that DNS changes can take some time to propagate across the internet, so it may not be live immediately.</p>
+</article>
+            </div>
+        </article>
+    </section>
+</main>
+
+    <!-- Footer Section -->
+    <footer class="bg-white border-t border-gray-200 mt-16">
+        <div class="container mx-auto px-4 py-8 text-center text-gray-500 text-sm">
+            <p>&copy; 2024 Sanyukta Suman. All Rights Reserved.</p>
+            <p class="mt-1">Created by Sanyukta Suman</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Mobile Menu Toggle
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
