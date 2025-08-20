@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanyukta Suman's Blog: A Journey of Growth</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Join Sanyukta Suman on a personal growth journey. This blog documents my learnings, coding projects, and discoveries as I navigate a new chapter in my life.">
+    <meta name="keywords" content="Sanyukta Suman, personal growth, blog, learning, coding, ML projects, self-improvement, life journey">
+
+    <!-- Optimized Google Fonts Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Outfit:wght@700&family=Shrikhand&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN for easy, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'heading': ['Outfit', 'sans-serif'],
+                        'body': ['Noto Sans', 'sans-serif'],
+                        'brand': ['Shrikhand', 'cursive'],
+                    },
+                    colors: {
+                        'brand-green': '#1d794c',
+                        'brand-off-white': '#f9f1e8'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-body">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo and Site Title -->
+            <a href="/index.html" class="flex items-center space-x-3">
+                <img src="/image/logo/sslogo.png" alt="Sanyukta Suman Logo" class="h-8 w-8 rounded-lg">
+                <span class="text-2xl text-brand-green font-brand">Sanyukta Suman</span>
+            </a>
+            <!-- Navigation -->
+            <div class="flex items-center">
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center">
+                    <a href="/index.html" title="Home" class="text-gray-600 hover:opacity-75 transition-opacity">
+                        <img src="/image/icons/home.svg" alt="Home" class="h-6 w-6">
+                    </a>
+                    <a href="blogpost_landing_page.html" class="ml-4 text-gray-700 hover:text-brand-green font-semibold">Blog</a>
+                    <a href="guide_landing_page.html" class="ml-4 text-gray-700 hover:text-brand-green font-semibold">Guide</a>
+                </nav>
+
+                <!-- Mobile: Burger Menu Button -->
+                <div class="md:hidden ml-4">
+                    <button id="menu-button" aria-label="Open Menu" class="focus:outline-none">
+                        <img src="/image/icons/menu.svg" alt="Menu" class="h-6 w-6">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Panel (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <nav class="flex flex-col p-4 space-y-2">
+                <a href="index.html#about" class="text-gray-700 hover:text-brand-green">About</a>
+                <a href="index.html#projects" class="text-gray-700 hover:text-brand-green">Projects</a>
+                <a href="blogpost_landing_page.html" class="text-gray-700 hover:text-brand-green">Blog</a>
+                <a href="guide_landing_page.html" class="text-gray-700 hover:text-brand-green">Guide</a>
+                <a href="index.html#contact" class="text-gray-700 hover:text-brand-green">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Blog Post starts from here -->
+    <!-- Main Content Area -->
+    <main class="container mx-auto px-4 py-8 md:py-16 max-w-4xl">
+        
+        <!-- Blog Post Thumbnail Section -->
+        <section class="mb-2">
+            <div class="relative w-full aspect-video bg-brand-green bg-opacity-10 rounded-2xl overflow-hidden shadow-lg flex items-center justify-center">
+                <img src="/image/blog_header/episode0.jpg" alt="Blog Post Thumbnail" class="object-cover w-full h-full">
+            </div>
+        </section>
+
+        <!-- New: Image Caption Section -->
+        <div class="mb-8 text-right text-sm text-gray-500">
+            Image credit: <a href="https://www.pinterest.com/pin/2392606048120235/" class="rounded-lg underline hover:text-brand-green">Pinterest</a>
+        </div>
+
+        <!-- Blog Post Content Section -->
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <article>
+                <h1 class="text-4xl font-heading font-bold text-gray-900 mb-2">[Blog Post Title]</h1>
+                
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-white border-t border-gray-200 mt-16">
+        <div class="container mx-auto px-4 py-8 text-center text-gray-500 text-sm">
+            <p>&copy; 2024 Sanyukta Suman. All Rights Reserved.</p>
+            <p class="mt-1">Created by Sanyukta Suman</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Mobile Menu Toggle
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
